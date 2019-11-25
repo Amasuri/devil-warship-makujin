@@ -29,6 +29,7 @@ namespace DevilMakujin.Code.Entity
         static protected List<Texture2D> otherLeechImg;
         protected Vector2 absPos;
         protected Vector2 speed;
+        protected Vector2 oldSpeed;
 
         protected Texture2D img;
 
