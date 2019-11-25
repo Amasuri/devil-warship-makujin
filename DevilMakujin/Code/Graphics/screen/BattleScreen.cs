@@ -149,7 +149,7 @@ namespace DevilMakujin.Code.Graphics
             this.PlayLevelSfx(game.musicPlayer);
             this.PlayerInput(keys, oldKeys, game.musicPlayer);
             this.UpdateEntityList(game.musicPlayer);
-            this.explosionDrawer.Update(game.delta);
+            this.explosionDrawer.Update(DevimakuGame.delta);
             HasEnemies = this.CheckIfHasImportantEnemiesLeft();
 
             //this.TightenBounds(); todo

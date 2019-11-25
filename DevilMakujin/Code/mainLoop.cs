@@ -23,7 +23,9 @@ namespace DevilMakujin
 
         public Code.Music.MusicPlayer musicPlayer;
         public GameTime refGameTime;
-        public TimeSpan delta;
+
+        static public TimeSpan delta;
+        static public float DeltaUpdate => delta.Milliseconds;
 
         public const int defGameWidth = 256 * 2;
         public const int defGameHeight = 160 * 2;
@@ -41,7 +43,8 @@ namespace DevilMakujin
             this._graphics.PreferredBackBufferHeight = defGameHeight * GlobalDrawArranger.Scale;
 
             this.refGameTime = new GameTime();
-            this.delta = new TimeSpan();
+
+            delta = new TimeSpan();
 
             this.Lang = "eng";
         }
