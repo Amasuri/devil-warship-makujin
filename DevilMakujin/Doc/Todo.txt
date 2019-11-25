@@ -1,0 +1,64 @@
+﻿---Postjam Todo List---
+
+
+
+
+
+
+
+
+~~~~~Isn't complete, contains only forgettable non-immediate things~~~~~
+
+
+
+---Implementions---
+	1. Ask Vlad about extra boss mechanics
+	6. Boss animations
+	10. Boss OURGHH and AHHH for hit sound which play only if no sounds from group are played
+	14. Menu screen
+	15. Sinistar control scheme + config
+	16. Gameover yes and no sound logic. 
+			yes: yes sound
+			no: no sound -> random no phrase from 15 bank -> 8 sec fade into gameover -> chill gamover music
+	17. Continue screen loop music
+	
+
+---Tweaks---
+	1. [Ok] Replace boss death sound with proper one; make boss children use the replaced sound
+	2. Small asteroids control fix: vector change on turn+thrust isn't sudden, but gradual
+	3. [Ok] Boss doesn't restore his flakes on reset
+	4. Consider re-implementing shooting on standing. Althrough it's kinda lame, but maybe.. not so lame, but great?
+	5. Fade-in for continue screen
+
+
+---Misfeature fixes, bugs---
+	3. Flying text may cause problems when it's several minutes into titles (simply introduce a limiting variable for endgame screen draw)
+	4. Something is causing a massive memory leak everywhere from start to finish (even through several map and battle screens)
+		something like +200mB/5 minutes; on game end all the accumulated stuff goes away before the actual game's unload
+	5. Fix weapon timing (slight delay before next shot due to timer not being reset on shot end)
+	6. Shoot/fly speeds are drastically different on each scale (x1 vs x5 to see). That's because of fixed coordinate system vs scaled sprites, yup.
+	7. The black shadow hogs up inscreasingly more memory with more scale because it's not drawn scaled, but initialized scaled (it's also tied to problem #6)
+	8. Minimap somehow doesn't spawn on center
+
+
+-------------------------------------------------------------------------------------------------------
+
+~~~~~COMPLETED~~~~
+
+
+
+---Implementions---
+	2. [Ok] Dictionaty<Vector2 pos, int frameCounterToEnd> explosions (50 ms each frame)
+	3. [Ok] Config file for volume/scale
+	4. [Ok] Shield gone sound for shield descruction, shield up for recovery, stageclear for end stage
+	5. [Ok] A system of stage continues
+	7. [Ok] Boss round hitbox
+	9. [Ok] Shader Fade-In 0-255 for game over screen (draw game screen on endgame too, but fill with Shader.Sillhouette(0-255) pixel, source-rected to screen size)
+	12.[Ok] Sound system improvement (Explosions has hit-and-let-go attitude; play only after enemy remove; diff sounds for bullets)
+	13.[Ok] Player kill, take damage and boss death sounds
+
+---Tweaks---
+
+---Misfeature fixes, bugs---
+	1. [Ok] Shield can recover with sound in titles/map (simple fix: move shield recharge into Update())
+	2. [Ok] Define black shadow drawing as source rect to reduce HUGE memory leak (Optimization Challenge)

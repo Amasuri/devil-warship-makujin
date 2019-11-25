@@ -1,0 +1,57 @@
+﻿<?xml version='1.0' encoding='utf-8'?>
+<SettingsFile xmlns="http://schemas.microsoft.com/VisualStudio/2004/01/settings" CurrentProfile="(Default)" GeneratedClassNamespace="DevilMakujin.Properties" GeneratedClassName="Settings">
+  <Profiles />
+  <Settings>
+    <Setting Name="Scale" Type="System.Int32" Scope="Application">
+      <Value Profile="(Default)">2</Value>
+    </Setting>
+    <Setting Name="StageMusicVolume" Type="System.Single" Scope="Application">
+      <Value Profile="(Default)">0.03</Value>
+    </Setting>
+    <Setting Name="SoundVolume" Type="System.Single" Scope="Application">
+      <Value Profile="(Default)">0.5</Value>
+    </Setting>
+    <Setting Name="OtherMusicVolume" Type="System.Single" Scope="Application">
+      <Value Profile="(Default)">0.5</Value>
+    </Setting>
+    <Setting Name="GunVolume" Type="System.Single" Scope="Application">
+      <Value Profile="(Default)">0.3</Value>
+    </Setting>
+    <Setting Name="VoiceVolume" Type="System.Single" Scope="Application">
+      <Value Profile="(Default)">1</Value>
+    </Setting>
+    <Setting Name="StartingStage" Type="System.Int32" Scope="Application">
+      <Value Profile="(Default)">1</Value>
+    </Setting>
+    <Setting Name="OldPhysicsSpeedDescreaseMultiplier" Type="System.Single" Scope="Application">
+      <Value Profile="(Default)">0.95</Value>
+    </Setting>
+    <Setting Name="OldPhysicsMaxEntitySpeed" Type="System.Single" Scope="Application">
+      <Value Profile="(Default)">20</Value>
+    </Setting>
+    <Setting Name="OldPhysicsAcceleration" Type="System.Single" Scope="Application">
+      <Value Profile="(Default)">0.5</Value>
+    </Setting>
+    <Setting Name="OldPhysicsMinSpeedThreshold" Type="System.Single" Scope="Application">
+      <Value Profile="(Default)">0.1</Value>
+    </Setting>
+    <Setting Name="AstPhysicsSpeedDescrease" Type="System.Single" Scope="Application">
+      <Value Profile="(Default)">0.985</Value>
+    </Setting>
+    <Setting Name="AstPhysicsAcceleration" Type="System.Single" Scope="Application">
+      <Value Profile="(Default)">0.4</Value>
+    </Setting>
+    <Setting Name="AstPhysicsMaxSpeed" Type="System.Single" Scope="Application">
+      <Value Profile="(Default)">9</Value>
+    </Setting>
+    <Setting Name="AstPhysicsMinSpeed" Type="System.Single" Scope="Application">
+      <Value Profile="(Default)">0.05</Value>
+    </Setting>
+    <Setting Name="AstPhysicsRotationRate" Type="System.Single" Scope="Application">
+      <Value Profile="(Default)">0.07</Value>
+    </Setting>
+    <Setting Name="DefaultPhysicsMode" Type="System.Int32" Scope="Application">
+      <Value Profile="(Default)">1</Value>
+    </Setting>
+  </Settings>
+</SettingsFile>

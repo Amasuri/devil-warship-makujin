@@ -1,0 +1,57 @@
+﻿DEVIL WARSHIP MAKUJIN
+
+Makujin is a cosmic demon that devours space and time itself.
+His black jaws appear all over the galaxy, brought by his smaller minions.
+
+(кавер арт)
+
+You will assume the role of Kinrunner, a living spaceship created by cosmic god Gokagu for the sole purpose of defeating Makujin.
+The demon has transformed into a huge cybernetic space battleship. He has also brainwashed a number of wandering space pirates with his supreme mental power, to use them as a weapon against you.
+
+(скриншот с пиратами)
+
+Kinrunner has enough potential to beat the demon's minions thanks to its Saturnus cannon. But this weapon alone is hardly enough to defeat Makujin himself.
+Fortunately, your ship can absorb the power that the demon uses to devour space. This power can be easily converted into various useful upgrades for the living ship. With them, you can surely defeat this fearsome devil.
+
+(скриншот с другим оружием)
+
+Go forth, Kinrunner! There is no way back. Devil Warship Makujin awaits.
+
+
+CONTROLS:
+Arrow Keys - Movement
+Z - Shooting, Start Button
+X - ...
+
+
+
+
+***ТИТРЫ***
+
+DEVIL WARSHIP MAKUJIN STAFF
+
+(большое пустое место)
+
+-Game Concept and Direction
+Ceuteum, YoukaiDrawing, sat9
+
+-Programming Beyond Human Capabilities
+Ceuteum
+
+-Graphic Design and Art Direction
+YoukaiDrawing
+
+-Music and Sound Effects
+sat9
+
+-Voice Acting
+sat9
+
+-Huge Space Whale Sounds
+Ceuteum
+
+-Special Thanks
+Ludum Dare Staff and Community
+...And you.
+
+(и фэйдаут в экран геймовера если можно)

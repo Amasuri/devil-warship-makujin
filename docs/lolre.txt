@@ -1,0 +1,45 @@
+﻿Akuma Daisenkan Makujin
+悪魔大戦艦マクジン
+
+Игрок - избранный космическим богом Goukagu воин, которого соединили с боевым звездолётом Kinrunner.
+
+Его миссия - победить космического демона Makujin. Демон имеет облик огромного живого космического линкора.
+
+Makujin - очень опасный демон, пожирающий миры и пространство. Его чёрные челюсти могут оказаться в любой части вселенной, где находятся его "дети" - живые космические корабли.
+
+К счастью, Kinrunner наделён мощью, чтобы уничтожить "детей" демона. Но этой мощи, скорее всего, недостаточно, чтобы победить его самого.
+Благодаря человеческой душе игрока, с которой соединён Kinrunner, корабль способен поглощать энергию, которую Makujin использует для перемещения своих чёрных челюстей, и преобразовывать её в нужные предметы.
+
+Пути назад больше нет. Впереди только Демонический Линкор.
+
+
+
+
+
+Описания предметов:
+
+(Основное оружие 1) Saturnus Cannon
+Stock main weapon for Kinrunner.
+May not seem too strong, but its firepower is enough to bring down most Makujin minions.
+
+(Основное оружие 2) Vulcanus Driver
+A fast-shooting heavy machine gun.
+A truly versatile weapon for an adaptive warrior. Its damage output is fairly average, but the attack line is wider than most other main weapons.
+
+(Основное оружие 3) Neptunus Longshot Blaster
+A powerful and precise machine cannon.
+One of the strongest weapons availible for Kinrunner. Its attack line is the narrowest out of all the main weapons. Only the most patient sharpshooters can realize its full potential.
+
+(Основное оружие 4) Tartarus Gravity Driver
+A mysterious weapon granted to Kinrunner according to Lord Goukagu's providence.
+What powers does it hold withing itself?
+
+(Основное оружие 5) Caelus Automated Weapon
+A weapon that chases after its enemies.
+What it lacks in firepower it compensates with ease of use.
+A weapon for a warrior who truly wants to lose everything that chains him.
+
+(Основное оружие 6) Apollyon Matter Crusher
+A powerful close combat weapon.
+It's attack line is fairly wide, but the range is severely limited.
+A fitting weapon for the bravest warrior.
