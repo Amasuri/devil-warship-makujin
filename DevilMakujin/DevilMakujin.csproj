@@ -75,7 +75,7 @@
   </PropertyGroup>
   <ItemGroup>
     <Compile Include="Code\Entity\ShipGunner.cs" />
-    <Compile Include="Code\Entity\ShipRocket.cs" />
+    <Compile Include="Code\Entity\ShipRocketeer.cs" />
     <Compile Include="Code\Entity\ShipSniper.cs" />
     <Compile Include="Code\Graphics\base\Button.cs" />
     <Compile Include="Code\Graphics\screen\BattleScreen.cs" />
