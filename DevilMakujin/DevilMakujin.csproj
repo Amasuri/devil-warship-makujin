@@ -74,6 +74,7 @@
     <SignManifests>false</SignManifests>
   </PropertyGroup>
   <ItemGroup>
+    <Compile Include="Code\Entity\Obstacle.cs" />
     <Compile Include="Code\Entity\ShipGunner.cs" />
     <Compile Include="Code\Entity\ShipRocketeer.cs" />
     <Compile Include="Code\Entity\ShipSniper.cs" />

@@ -247,6 +247,10 @@ namespace DevilMakujin.Code.Graphics
         {
             foreach (var enemy in enemies)
                 entityList.Add(enemy);
+
+#if DEBUG
+            entityList.Add(new Obstacle(Vector2.Zero + new Vector2(70 * 10, 100)));
+#endif
         }
 
         private void DrawEntityList(SpriteBatch spriteBatch, int scale, Vector2 playerAbsPos)
@@ -286,6 +290,39 @@ namespace DevilMakujin.Code.Graphics
                         //todo probably can break after one addition?
                     }
                 }
+            }
+
+            //Updating asteroids
+            foreach (Obstacle obs in entityList.Where(obs => obs is Obstacle))
+            {
+                foreach (Bullet bullet in entityList.Where(bul => bul is Bullet))
+                {
+                    if (bullet.GetRect().Intersects(obs.GetRect()))
+                    {
+                        if (!deleteList.Contains(bullet))
+                            deleteList.Add(bullet);
+                    }
+                }
+
+                foreach (BulletRocket rocket in entityList.Where(bul => bul is BulletRocket))
+                {
+                    if (rocket.GetRect().Intersects(obs.GetRect()))
+                    {
+                        if (!deleteList.Contains(rocket))
+                            deleteList.Add(rocket);
+                    }
+                }
+
+                foreach (GenericEnemy enemy in entityList.Where(enemy => enemy is GenericEnemy))
+                {
+                    if (enemy.GetRect().Intersects(obs.GetRect()))
+                    {
+                        enemy.ReverseSpeedAndUpdatePos(obs.GetPos());
+                    }
+                }
+
+                if(obs.GetRect().Intersects( playerSprite.GetPlayerEntityRect(PlayerPhysics.PlayerAbsPos + playerDrawOffset, GlobalDrawArranger.Scale)))
+                    PlayerPhysics.RevertSpeed();
             }
 
             //Updating player hitboxes
@@ -364,7 +401,6 @@ namespace DevilMakujin.Code.Graphics
                     }
                 }
             }
-            this.AddEnemies(addList);
 
             //Making so enemies don't collide
             foreach (GenericEnemy enemy1 in entityList.Where(enemy => enemy is GenericEnemy))
