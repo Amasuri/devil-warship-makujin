@@ -64,6 +64,28 @@ namespace DevilMakujin.Code.Entity
             this.oldSpeed = this.speed;
         }
 
+        public override List<Bullet> ShootAtPlayer(Vector2 plPos)
+        {
+            Vector2 diff = plPos - absPos;
+
+            if (this.aiMode == AiMode.Fire)
+            {
+                this.FiringCooldown -= DevimakuGame.DeltaUpdate;
+
+                if (this.FiringCooldown <= 0f)
+                {
+                    this.FiringCooldown = MAX_ROCKET_SALVO_DELAY;
+                    return ConstructShootList(ConstructShootVector(plPos));
+                }
+
+                return new List<Bullet>();
+            }
+            else
+            {
+                return new List<Bullet>();
+            }
+        }
+
         private void TriggerSeekMode()
         {
             this.aiMode = AiMode.Seek;
@@ -73,20 +95,6 @@ namespace DevilMakujin.Code.Entity
         {
             this.aiMode = AiMode.Fire;
             this.FiringCooldown = 0;
-        }
-
-        public override List<Bullet> ShootAtPlayer(Vector2 plPos)
-        {
-            Vector2 diff = plPos - absPos;
-
-            if (this.aiMode == AiMode.Fire)
-            {
-                return base.ShootAtPlayer(plPos);
-            }
-            else
-            {
-                return new List<Bullet>();
-            }
         }
     }
 }

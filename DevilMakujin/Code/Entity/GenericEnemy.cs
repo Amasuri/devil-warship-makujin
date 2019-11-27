@@ -24,7 +24,7 @@ namespace DevilMakujin.Code.Entity
         }
 
         /// <summary>
-        /// Performs equations whether to shoot or not. 
+        /// Performs equations whether to shoot or not.
         /// If shoot, return list of shot bullets.
         /// If not, return empty list.
         /// </summary>
@@ -44,7 +44,7 @@ namespace DevilMakujin.Code.Entity
             return retList;
         }
 
-        private Vector2 ConstructShootVector(Vector2 plPos)
+        protected Vector2 ConstructShootVector(Vector2 plPos)
         {
             double randPrecise = DevimakuGame.Rand.NextDouble()/10;
             Vector2 shoot = (plPos - this.absPos);
@@ -66,7 +66,6 @@ namespace DevilMakujin.Code.Entity
             );
 
             //this.speed = diff;
-
         }
 
         virtual protected List<Bullet> ConstructShootList(Vector2 shootVector)
@@ -117,7 +116,6 @@ namespace DevilMakujin.Code.Entity
 
             //    this.UpdatePos();
             //}
-
         }
 
         internal virtual void RestoreOriginalState()
