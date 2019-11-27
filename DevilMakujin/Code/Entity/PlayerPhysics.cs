@@ -180,9 +180,11 @@ namespace DevilMakujin.Code.Entity
             PlayerAbsPos += PlayerPosDiff;
         }
 
-        internal static void RevertSpeed()
+        internal static void HandleCollision()
         {
-            PlayerPosDiff = -PlayerPosDiff;
+            PlayerPosDiff = -PlayerPosDiff * 7 / 6;
+
+            UpdatePos(Controls.ShipMode.Asteroids);
         }
 
         public static float GetRotationForDraw(Controls.ShipMode mode)

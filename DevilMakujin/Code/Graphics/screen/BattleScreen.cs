@@ -322,7 +322,7 @@ namespace DevilMakujin.Code.Graphics
                 }
 
                 if(obs.GetRect().Intersects( playerSprite.GetPlayerEntityRect(PlayerPhysics.PlayerAbsPos + playerDrawOffset, GlobalDrawArranger.Scale)))
-                    PlayerPhysics.RevertSpeed();
+                    PlayerPhysics.HandleCollision();
             }
 
             //Updating player hitboxes
@@ -346,7 +346,7 @@ namespace DevilMakujin.Code.Graphics
             {
                 if (enemy.GetRect().Intersects(playerSprite.GetPlayerEntityRect(PlayerPhysics.PlayerAbsPos + playerDrawOffset, GlobalDrawArranger.Scale)))
                 {
-                    PlayerPhysics.RevertSpeed();
+                    PlayerPhysics.HandleCollision();
                     if (playerSprite.IsInvisible())
                         break;
 
@@ -512,7 +512,7 @@ namespace DevilMakujin.Code.Graphics
 
             if (!mapCircle.Contains(pos))
             {
-                PlayerPhysics.RevertSpeed();
+                PlayerPhysics.HandleCollision();
                 IsPlayerDead = PlayerEquipInfo.HitAndCheckDead(playerSprite, music);
             }
         }
