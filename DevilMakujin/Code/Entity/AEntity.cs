@@ -27,7 +27,7 @@ namespace DevilMakujin.Code.Entity
         static protected List<Texture2D> enemyShipImg;
         static protected List<Texture2D> asteroidImg;
         static protected List<Texture2D> leechImg;
-        static protected List<Texture2D> otherLeechImg;
+        static protected List<Texture2D> rocketImg;
         protected Vector2 absPos;
         protected Vector2 speed;
         protected Vector2 oldSpeed;
@@ -131,9 +131,10 @@ namespace DevilMakujin.Code.Entity
                 game.Content.Load<Texture2D>("entity/minion3"),
             };
 
-            otherLeechImg = new List<Texture2D>
+            rocketImg = new List<Texture2D>
             {
-                game.Content.Load<Texture2D>("entity/minion_rocket")
+                game.Content.Load<Texture2D>("entity/minion_rocket"),
+                game.Content.Load<Texture2D>("entity/rocket"),
             };
         }
     }

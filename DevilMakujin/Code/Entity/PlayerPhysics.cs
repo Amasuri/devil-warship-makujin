@@ -182,7 +182,7 @@ namespace DevilMakujin.Code.Entity
 
         internal static void HandleCollision()
         {
-            PlayerPosDiff = -PlayerPosDiff * 7 / 6;
+            PlayerPosDiff = -PlayerPosDiff * 70 / 69;
 
             UpdatePos(Controls.ShipMode.Asteroids);
         }

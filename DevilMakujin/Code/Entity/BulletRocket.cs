@@ -14,9 +14,9 @@ namespace DevilMakujin.Code.Entity
         public BulletRocket(Vector2 initPos, EntityType type = EntityType.Enemy, RocketType rType = RocketType.BossLeech) : base(initPos, type)
         {
             if (rType == RocketType.BossLeech)
-                this.img = otherLeechImg[0];
+                this.img = rocketImg[0];
             else
-                this.img = otherLeechImg[0];
+                this.img = rocketImg[1];
         }
 
         protected override List<AEntity> ConstructShootList(Vector2 shootVector)
