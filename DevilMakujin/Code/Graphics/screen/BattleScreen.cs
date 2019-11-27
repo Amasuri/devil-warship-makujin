@@ -392,17 +392,19 @@ namespace DevilMakujin.Code.Graphics
             }
 
             //Updating enemy shootings
-            List<Bullet> shootList = new List<Bullet>();
+            List<AEntity> shootList = new List<AEntity>();
             foreach (GenericEnemy enemy in entityList.Where(enemy => enemy is GenericEnemy))
             {
-                List<Bullet> nextShotListAdd = enemy.ShootAtPlayer(PlayerPhysics.PlayerAbsPos + playerDrawOffset);
+                List<AEntity> nextShotListAdd = enemy.ShootAtPlayer(PlayerPhysics.PlayerAbsPos + playerDrawOffset);
                 foreach (var item in nextShotListAdd)
                     shootList.Add(item);
             }
 
             //Adding every enemy's bullets as projectiles from shooting list
-            foreach (Bullet bul in shootList)
+            foreach (Bullet bul in shootList.OfType<Bullet>())
                 entityList.Add(bul);
+            foreach (BossRocket rocket in shootList.OfType<BossRocket>())
+                entityList.Add(rocket);
         }
 
         private void PlayerInput(KeyboardState keys, KeyboardState oldKeys, MusicPlayer music)

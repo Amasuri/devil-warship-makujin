@@ -74,7 +74,7 @@ namespace DevilMakujin.Code.Entity
             this.oldSpeed = this.speed;
         }
 
-        public override List<Bullet> ShootAtPlayer(Vector2 plPos)
+        public override List<AEntity> ShootAtPlayer(Vector2 plPos)
         {
             Vector2 diff = plPos - absPos;
 
@@ -88,7 +88,7 @@ namespace DevilMakujin.Code.Entity
             }
             else
             {
-                return new List<Bullet>();
+                return new List<AEntity>();
             }
         }
 

@@ -64,7 +64,7 @@ namespace DevilMakujin.Code.Entity
             this.oldSpeed = this.speed;
         }
 
-        public override List<Bullet> ShootAtPlayer(Vector2 plPos)
+        public override List<AEntity> ShootAtPlayer(Vector2 plPos)
         {
             Vector2 diff = plPos - absPos;
 
@@ -78,12 +78,20 @@ namespace DevilMakujin.Code.Entity
                     return ConstructShootList(ConstructShootVector(plPos));
                 }
 
-                return new List<Bullet>();
+                return new List<AEntity>();
             }
             else
             {
-                return new List<Bullet>();
+                return new List<AEntity>();
             }
+        }
+
+        override protected List<AEntity> ConstructShootList(Vector2 shootVector)
+        {
+            return new List<AEntity>
+            {
+                new BossRocket(this.absPos)
+            };
         }
 
         private void TriggerSeekMode()

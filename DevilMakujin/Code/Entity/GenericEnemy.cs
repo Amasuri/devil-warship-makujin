@@ -28,9 +28,9 @@ namespace DevilMakujin.Code.Entity
         /// If shoot, return list of shot bullets.
         /// If not, return empty list.
         /// </summary>
-        virtual public List<Bullet> ShootAtPlayer(Vector2 plPos)
+        virtual public List<AEntity> ShootAtPlayer(Vector2 plPos)
         {
-            var retList = new List<Bullet>();
+            var retList = new List<AEntity>();
             shootTime++;
 
             if (shootTime >= DevimakuGame.Rand.Next(700*3))
@@ -68,9 +68,9 @@ namespace DevilMakujin.Code.Entity
             //this.speed = diff;
         }
 
-        virtual protected List<Bullet> ConstructShootList(Vector2 shootVector)
+        virtual protected List<AEntity> ConstructShootList(Vector2 shootVector)
         {
-            return new List<Bullet>
+            return new List<AEntity>
             {
                 new Bullet(this.absPos, shootVector, EntityFaction.Enemies, bulletType: Bullet.BulletType.SpeedBlaster)
             };

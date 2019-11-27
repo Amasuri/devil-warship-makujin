@@ -80,9 +80,9 @@ namespace DevilMakujin.Code.Entity
         {
         }
 
-        public override List<Bullet> ShootAtPlayer(Vector2 plPos)
+        public override List<AEntity> ShootAtPlayer(Vector2 plPos)
         {
-            var retList = new List<Bullet>();
+            var retList = new List<AEntity>();
 
             if(phraseCount == 500)
             {

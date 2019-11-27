@@ -28,9 +28,9 @@ namespace DevilMakujin.Code.Entity
             this.UpdatePos();
         }
 
-        protected override List<Bullet> ConstructShootList(Vector2 shootVector)
+        protected override List<AEntity> ConstructShootList(Vector2 shootVector)
         {
-            return new List<Bullet>
+            return new List<AEntity>
             {
                 new Bullet(this.absPos, shootVector, EntityFaction.Enemies, bulletType: Bullet.BulletType.Leech)
             };

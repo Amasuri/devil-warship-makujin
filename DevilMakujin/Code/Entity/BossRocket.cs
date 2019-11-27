@@ -10,9 +10,9 @@ namespace DevilMakujin.Code.Entity
             this.img = otherLeechImg[0];
         }
 
-        protected override List<Bullet> ConstructShootList(Vector2 shootVector)
+        protected override List<AEntity> ConstructShootList(Vector2 shootVector)
         {
-            return new List<Bullet>();
+            return new List<AEntity>();
         }
 
         public override void ReverseSpeedAndUpdatePos(Vector2 anotherEnemyPos)
