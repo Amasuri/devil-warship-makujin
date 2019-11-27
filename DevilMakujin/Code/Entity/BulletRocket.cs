@@ -5,9 +5,18 @@ namespace DevilMakujin.Code.Entity
 {
     public class BulletRocket : GenericEnemy
     {
-        public BulletRocket(Vector2 initPos, EntityType type = EntityType.Enemy) : base(initPos, type)
+        public enum RocketType
         {
-            this.img = otherLeechImg[0];
+            BossLeech,
+            Rocketeer
+        }
+
+        public BulletRocket(Vector2 initPos, EntityType type = EntityType.Enemy, RocketType rType = RocketType.BossLeech) : base(initPos, type)
+        {
+            if (rType == RocketType.BossLeech)
+                this.img = otherLeechImg[0];
+            else
+                this.img = otherLeechImg[0];
         }
 
         protected override List<AEntity> ConstructShootList(Vector2 shootVector)
