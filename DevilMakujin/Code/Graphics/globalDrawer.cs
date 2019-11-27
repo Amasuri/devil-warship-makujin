@@ -101,7 +101,7 @@ namespace DevilMakujin.Code
             }
 
             //Draw pause overlay (temporal)
-            if(Controls.isPauseToggled)
+            if(Controls.IsPauseToggled)
             {
                 int scale = GlobalDrawArranger.Scale;
                 int winX = DevimakuGame.defGameWidth * scale;
@@ -128,7 +128,7 @@ namespace DevilMakujin.Code
                 Controls.ToggleControlPause();
 
             //No updates on pause
-            if (Controls.isPauseToggled)
+            if (Controls.IsPauseToggled)
             {
                 this._oldKey = this._key;
                 this._oldMouse = this._mouse;

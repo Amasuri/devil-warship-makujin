@@ -123,8 +123,8 @@ namespace DevilMakujin.Code.Graphics
         {
             int scale = GlobalDrawArranger.Scale;
 
-            var playerAbsPosCopy = PlayerPhysics.playerAbsPos;
-            var playerSpeedCopy = PlayerPhysics.playerPosDiff;
+            var playerAbsPosCopy = PlayerPhysics.PlayerAbsPos;
+            var playerSpeedCopy = PlayerPhysics.PlayerPosDiff;
 
             //Background
             this.parallaxSprite.Render(spriteBatch, scale, playerAbsPosCopy, mapBounds); //+playerDrawOffset*2 doesn't make sense since it's not offsetplayer draw (but still here in case of the offsetting bugs)
@@ -179,9 +179,9 @@ namespace DevilMakujin.Code.Graphics
 
         private void DebugBorderDraws(SpriteBatch spriteBatch, int scale, Vector2 vector2)
         {
-            Vector2 center = mapCircle.Center - PlayerPhysics.playerAbsPos;
-            Vector2 left = mapCircle.Center + new Vector2(mapCircle.Radius, 0) - PlayerPhysics.playerAbsPos;
-            Vector2 right = mapCircle.Center + new Vector2(-mapCircle.Radius, 0) - PlayerPhysics.playerAbsPos;
+            Vector2 center = mapCircle.Center - PlayerPhysics.PlayerAbsPos;
+            Vector2 left = mapCircle.Center + new Vector2(mapCircle.Radius, 0) - PlayerPhysics.PlayerAbsPos;
+            Vector2 right = mapCircle.Center + new Vector2(-mapCircle.Radius, 0) - PlayerPhysics.PlayerAbsPos;
 
             spriteBatch.Draw(GlobalDrawArranger.pixel, center, null, Color.Red, 0.0f, Vector2.Zero, 10.0f, SpriteEffects.None, 0.0f);
         }
@@ -237,7 +237,7 @@ namespace DevilMakujin.Code.Graphics
 
         private void PlayLevelSfx(MusicPlayer musicPlayer)
         {
-            if(Math.Abs(mapCircle.GetDistanceFromCenterInRadii(PlayerPhysics.playerAbsPos + (playerDrawOffset * 2))) >= 0.9f)
+            if(Math.Abs(mapCircle.GetDistanceFromCenterInRadii(PlayerPhysics.PlayerAbsPos + (playerDrawOffset * 2))) >= 0.9f)
             {
                 musicPlayer.PlaySound(SoundEvent.NearingVoid);
             }
@@ -294,7 +294,7 @@ namespace DevilMakujin.Code.Graphics
                 if (playerSprite.IsInvisible())
                     break;
 
-                if (bullet.GetRect().Intersects(playerSprite.GetPlayerEntityRect(PlayerPhysics.playerAbsPos + playerDrawOffset, GlobalDrawArranger.Scale)))
+                if (bullet.GetRect().Intersects(playerSprite.GetPlayerEntityRect(PlayerPhysics.PlayerAbsPos + playerDrawOffset, GlobalDrawArranger.Scale)))
                 {
                     IsPlayerDead = PlayerEquipInfo.HitAndCheckDead(playerSprite, music);
                     if (!deleteList.Contains(bullet))
@@ -307,7 +307,7 @@ namespace DevilMakujin.Code.Graphics
             //Updating player collision with enemies
             foreach (GenericEnemy enemy in entityList.Where(enemy => enemy is GenericEnemy))
             {
-                if (enemy.GetRect().Intersects(playerSprite.GetPlayerEntityRect(PlayerPhysics.playerAbsPos + playerDrawOffset, GlobalDrawArranger.Scale)))
+                if (enemy.GetRect().Intersects(playerSprite.GetPlayerEntityRect(PlayerPhysics.PlayerAbsPos + playerDrawOffset, GlobalDrawArranger.Scale)))
                 {
                     PlayerPhysics.RevertSpeed();
                     if (playerSprite.IsInvisible())
@@ -349,7 +349,7 @@ namespace DevilMakujin.Code.Graphics
             List<GenericEnemy> addList = new List<GenericEnemy>();
             foreach (var entity in entityList)
             {
-                entity.ChangeSpeedVector(PlayerPhysics.playerAbsPos + playerDrawOffset, mapBounds.Size.ToVector2());
+                entity.ChangeSpeedVector(PlayerPhysics.PlayerAbsPos + playerDrawOffset, mapBounds.Size.ToVector2());
                 entity.UpdatePos();
                 entity.PlaySounds(music);
 
@@ -395,7 +395,7 @@ namespace DevilMakujin.Code.Graphics
             List<Bullet> shootList = new List<Bullet>();
             foreach (GenericEnemy enemy in entityList.Where(enemy => enemy is GenericEnemy))
             {
-                List<Bullet> nextShotListAdd = enemy.ShootAtPlayer(PlayerPhysics.playerAbsPos + playerDrawOffset);
+                List<Bullet> nextShotListAdd = enemy.ShootAtPlayer(PlayerPhysics.PlayerAbsPos + playerDrawOffset);
                 foreach (var item in nextShotListAdd)
                     shootList.Add(item);
             }
@@ -446,7 +446,7 @@ namespace DevilMakujin.Code.Graphics
             //Two different input types for various guns
             var gun = PlayerEquipInfo.gun;
             bool doShoot = shootTimer % PlayerEquipInfo.GetShootTime(gun) == 0;
-            if (keys.IsKeyDown(Controls.shoot) && PlayerPhysics.playerPosDiff != Vector2.Zero && doShoot)
+            if (keys.IsKeyDown(Controls.shoot) && PlayerPhysics.PlayerPosDiff != Vector2.Zero && doShoot)
             {
                 music.PlaySound(gun);
 
@@ -456,13 +456,13 @@ namespace DevilMakujin.Code.Graphics
                         Vector2 leftDirecton = new Vector2(shotDirection.X - 0.03f, shotDirection.Y - 0.03f);
                         Vector2 RightDirecton = new Vector2(shotDirection.X + 0.03f, shotDirection.Y + 0.03f);
 
-                        this.entityList.Add(new Bullet(playerDrawOffset + PlayerPhysics.playerAbsPos, shotDirection * PlayerEquipInfo.GetEquippedGunSpeed(), EntityFaction.Player, bulletType: gun));
-                        this.entityList.Add(new Bullet(playerDrawOffset + PlayerPhysics.playerAbsPos, leftDirecton * PlayerEquipInfo.GetEquippedGunSpeed(), EntityFaction.Player, bulletType: gun));
-                        this.entityList.Add(new Bullet(playerDrawOffset + PlayerPhysics.playerAbsPos, RightDirecton * PlayerEquipInfo.GetEquippedGunSpeed(), EntityFaction.Player, bulletType: gun));
+                        this.entityList.Add(new Bullet(playerDrawOffset + PlayerPhysics.PlayerAbsPos, shotDirection * PlayerEquipInfo.GetEquippedGunSpeed(), EntityFaction.Player, bulletType: gun));
+                        this.entityList.Add(new Bullet(playerDrawOffset + PlayerPhysics.PlayerAbsPos, leftDirecton * PlayerEquipInfo.GetEquippedGunSpeed(), EntityFaction.Player, bulletType: gun));
+                        this.entityList.Add(new Bullet(playerDrawOffset + PlayerPhysics.PlayerAbsPos, RightDirecton * PlayerEquipInfo.GetEquippedGunSpeed(), EntityFaction.Player, bulletType: gun));
                         break;
 
                     default:
-                        this.entityList.Add(new Bullet(playerDrawOffset + PlayerPhysics.playerAbsPos, shotDirection * PlayerEquipInfo.GetEquippedGunSpeed(), EntityFaction.Player, bulletType: gun));
+                        this.entityList.Add(new Bullet(playerDrawOffset + PlayerPhysics.PlayerAbsPos, shotDirection * PlayerEquipInfo.GetEquippedGunSpeed(), EntityFaction.Player, bulletType: gun));
                         break;
                 }
             }
@@ -470,7 +470,7 @@ namespace DevilMakujin.Code.Graphics
 
         private void CheckIfPlayerAtBounds(MusicPlayer music)
         {
-            Vector2 pos = PlayerPhysics.playerAbsPos + (playerDrawOffset * 2);
+            Vector2 pos = PlayerPhysics.PlayerAbsPos + (playerDrawOffset * 2);
 
             if (!mapCircle.Contains(pos))
             {

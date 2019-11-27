@@ -35,7 +35,7 @@ namespace DevilMakujin.Code
         private const Keys ili = Keys.K;
         private const Keys ty = Keys.U;
 
-        static public bool isPauseToggled { get; private set; }
+        static public bool IsPauseToggled { get; private set; }
 
         static public bool CheckForSinglePress(KeyboardState keyboard, KeyboardState oldKeyboard, Keys checkKey)
         {
@@ -62,7 +62,7 @@ namespace DevilMakujin.Code
 
         static public void ToggleControlPause()
         {
-            isPauseToggled = !isPauseToggled;
+            IsPauseToggled = !IsPauseToggled;
         }
 
         static public bool CheckForClick(MouseState mouse, MouseState oldMouse)
