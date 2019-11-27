@@ -17,7 +17,6 @@ namespace DevilMakujin.Code.Entity
 
         public override void ReverseSpeedAndUpdatePos(Vector2 anotherEnemyPos)
         {
-
         }
 
         public override void UpdatePos()

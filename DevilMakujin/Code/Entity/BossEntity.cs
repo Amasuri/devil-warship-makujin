@@ -76,11 +76,6 @@ namespace DevilMakujin.Code.Entity
             spriteBatch.Draw(eye, -plPos + absPos, null, Color.White, rotation, origin, scale, SpriteEffects.None, 0.0f);
         }
 
-        public override Rectangle GetRect()
-        {
-            return base.GetRect();
-        }
-
         public override void ChangeSpeedVector(Vector2 plPos, Vector2 mapSize)
         {
         }

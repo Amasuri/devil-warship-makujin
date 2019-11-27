@@ -1,6 +1,5 @@
 ﻿using DevilMakujin.Properties;
 using Microsoft.Xna.Framework.Input;
-using System;
 
 namespace DevilMakujin.Code
 {

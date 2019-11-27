@@ -32,7 +32,7 @@ namespace DevilMakujin.Code.Graphics
         private const int physMapShrink = 1;
 
         private Rectangle mapBounds;
-        private Circle mapCircle;
+        private readonly Circle mapCircle;
         private readonly int MapSizeInTiles = 3;
         private readonly Texture2D blackCanvas;
         private Vector2 blackCanvasDrawOffset;
@@ -247,19 +247,6 @@ namespace DevilMakujin.Code.Graphics
         {
             foreach (var enemy in enemies)
                 entityList.Add(enemy);
-        }
-
-        private void DeleteAllEnemies(List<AEntity> entityList)
-        {
-            var deleteIter = new List<AEntity>();
-            foreach (var enemy in entityList.Where(enemy => enemy is GenericEnemy))
-            {
-                deleteIter.Add(enemy);
-            }
-            foreach (var enemy in deleteIter)
-            {
-                entityList.Remove(enemy);
-            }
         }
 
         private void DrawEntityList(SpriteBatch spriteBatch, int scale, Vector2 playerAbsPos)

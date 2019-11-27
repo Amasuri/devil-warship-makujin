@@ -88,7 +88,7 @@ namespace DevilMakujin.Code.Entity
             }
             else
             {
-                return new List<Bullet> { };
+                return new List<Bullet>();
             }
         }
 

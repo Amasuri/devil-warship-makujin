@@ -1,7 +1,6 @@
 ﻿using Microsoft.Xna.Framework;
 using Microsoft.Xna.Framework.Graphics;
 using Microsoft.Xna.Framework.Input;
-using System;
 
 namespace DevilMakujin.Code.Graphics
 {
@@ -57,7 +56,6 @@ namespace DevilMakujin.Code.Graphics
 
         public void Update(DevimakuGame game, MouseState mouse, MouseState oldMouse, KeyboardState keys, KeyboardState oldKeys)
         {
-
         }
 
         /// <summary>

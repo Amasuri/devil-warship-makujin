@@ -7,26 +7,10 @@ namespace DevilMakujin.Code.Graphics
     public class ParallaxSprite
     {
         private readonly Texture2D canvas;
-        private readonly List<Texture2D> parallax;
-        private readonly int[] parallaxOrderId;
 
         public ParallaxSprite(DevimakuGame game)
         {
             this.canvas = game.Content.Load<Texture2D>("gui/parallax3");
-            this.parallax = new List<Texture2D>
-            {
-                game.Content.Load<Texture2D>("parallax/tile1"),
-                game.Content.Load<Texture2D>("parallax/tile2"),
-                game.Content.Load<Texture2D>("parallax/tile3"),
-                game.Content.Load<Texture2D>("parallax/tile4"),
-            };
-
-            this.parallaxOrderId = new int[]
-            {
-                0, 2, 1,
-                3, 0, 2,
-                2, 1, 3
-            };
         }
 
         public void Render(SpriteBatch spriteBatch, int scale, Vector2 plAbsPos, Rectangle mapBounds)

@@ -1,5 +1,4 @@
-﻿using System;
-using Microsoft.Xna.Framework;
+﻿using Microsoft.Xna.Framework;
 using Microsoft.Xna.Framework.Graphics;
 using Microsoft.Xna.Framework.Input;
 
@@ -16,6 +15,7 @@ namespace DevilMakujin.Code.Graphics
             Default,
             Options,
         }
+
         private MenuStates menuState;
 
         private Texture2D backgr;

@@ -1,12 +1,6 @@
-﻿using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
-
-namespace DevilMakujin.Code.Entity
+﻿namespace DevilMakujin.Code.Entity
 {
-    class ShipRocket
+    public class ShipRocket
     {
     }
 }

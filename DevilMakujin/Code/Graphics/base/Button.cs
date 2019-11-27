@@ -31,7 +31,7 @@ namespace DevilMakujin.Code.Graphics
             spriteBatch.Draw(normalImg, pos*scale, null, Color.White, 0.0f, Vector2.Zero, scale, SpriteEffects.None, 0.0f);
 
             if(this.RectContainsPoint(playerMouse) && overlayImg != null)
-                spriteBatch.Draw(overlayImg, pos*scale - overlayImgOffset*scale, null, Color.White, 0.0f, Vector2.Zero, scale, SpriteEffects.None, 0.0f);
+                spriteBatch.Draw(overlayImg, (pos * scale) - (overlayImgOffset * scale), null, Color.White, 0.0f, Vector2.Zero, scale, SpriteEffects.None, 0.0f);
         }
 
         public bool RectContainsPoint(Vector2 point)
