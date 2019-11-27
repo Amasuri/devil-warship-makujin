@@ -315,7 +315,7 @@ namespace DevilMakujin.Code.Graphics
 
                     IsPlayerDead = PlayerEquipInfo.HitAndCheckDead(playerSprite, music);
 
-                    if (enemy is BossRocket && !deleteList.Contains(enemy))
+                    if (enemy is BulletRocket && !deleteList.Contains(enemy))
                         deleteList.Add(enemy);
                 }
             }
@@ -403,7 +403,7 @@ namespace DevilMakujin.Code.Graphics
             //Adding every enemy's bullets as projectiles from shooting list
             foreach (Bullet bul in shootList.OfType<Bullet>())
                 entityList.Add(bul);
-            foreach (BossRocket rocket in shootList.OfType<BossRocket>())
+            foreach (BulletRocket rocket in shootList.OfType<BulletRocket>())
                 entityList.Add(rocket);
         }
 

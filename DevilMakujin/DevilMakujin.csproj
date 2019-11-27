@@ -85,7 +85,7 @@
     <Compile Include="Code\Graphics\screen\MenuScreen.cs" />
     <Compile Include="Code\Utils\Controls.cs" />
     <Compile Include="Code\Entity\AEntity.cs" />
-    <Compile Include="Code\Entity\BossRocket.cs" />
+    <Compile Include="Code\Entity\BulletRocket.cs" />
     <Compile Include="Code\Graphics\base\BossAnimation.cs" />
     <Compile Include="Code\Entity\BossEntity.cs" />
     <Compile Include="Code\Entity\BossLeech.cs" />

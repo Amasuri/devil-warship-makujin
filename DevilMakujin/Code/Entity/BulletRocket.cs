@@ -3,9 +3,9 @@ using Microsoft.Xna.Framework;
 
 namespace DevilMakujin.Code.Entity
 {
-    public class BossRocket : GenericEnemy
+    public class BulletRocket : GenericEnemy
     {
-        public BossRocket(Vector2 initPos, EntityType type = EntityType.Enemy) : base(initPos, type)
+        public BulletRocket(Vector2 initPos, EntityType type = EntityType.Enemy) : base(initPos, type)
         {
             this.img = otherLeechImg[0];
         }

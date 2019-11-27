@@ -90,7 +90,8 @@ namespace DevilMakujin.Code.Entity
         {
             return new List<AEntity>
             {
-                new BossRocket(this.absPos)
+                new BulletRocket(this.absPos + new Vector2(10 * GlobalDrawArranger.Scale, 0)),
+                new BulletRocket(this.absPos - new Vector2(10 * GlobalDrawArranger.Scale, 0))
             };
         }
 

@@ -153,7 +153,7 @@ namespace DevilMakujin.Code.Entity
             if (needSpawnRocket)
             {
                 needSpawnRocket = false;
-                ret.Add(new BossRocket(absPos));
+                ret.Add(new BulletRocket(absPos));
             }
 
             return ret;
