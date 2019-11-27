@@ -1360,307 +1360,307 @@
 
 #begin ../../res/sound/bosswarning.ogg
 /importer:OggImporter
-/processor:SongProcessor
+/processor:SoundEffectProcessor
 /processorParam:Quality=Best
 /build:../../res/sound/bosswarning.ogg;res/sound/bosswarning.ogg
 
 #begin ../../res/sound/confirm.ogg
 /importer:OggImporter
-/processor:SongProcessor
+/processor:SoundEffectProcessor
 /processorParam:Quality=Best
 /build:../../res/sound/confirm.ogg;res/sound/confirm.ogg
 
 #begin ../../res/sound/continueyes.ogg
 /importer:OggImporter
-/processor:SongProcessor
+/processor:SoundEffectProcessor
 /processorParam:Quality=Best
 /build:../../res/sound/continueyes.ogg;res/sound/continueyes.ogg
 
 #begin ../../res/sound/death.ogg
 /importer:OggImporter
-/processor:SongProcessor
+/processor:SoundEffectProcessor
 /processorParam:Quality=Best
 /build:../../res/sound/death.ogg;res/sound/death.ogg
 
 #begin ../../res/sound/enemy_kill3.ogg
 /importer:OggImporter
-/processor:SongProcessor
+/processor:SoundEffectProcessor
 /processorParam:Quality=Best
 /build:../../res/sound/enemy_kill3.ogg;res/sound/enemy_kill3.ogg
 
 #begin ../../res/sound/enemy_kill4.ogg
 /importer:OggImporter
-/processor:SongProcessor
+/processor:SoundEffectProcessor
 /processorParam:Quality=Best
 /build:../../res/sound/enemy_kill4.ogg;res/sound/enemy_kill4.ogg
 
 #begin ../../res/sound/game start 2.ogg
 /importer:OggImporter
-/processor:SongProcessor
+/processor:SoundEffectProcessor
 /processorParam:Quality=Best
 /build:../../res/sound/game start 2.ogg;res/sound/game start 2.ogg
 
 #begin ../../res/sound/newlonglazer.ogg
 /importer:OggImporter
-/processor:SongProcessor
+/processor:SoundEffectProcessor
 /processorParam:Quality=Best
 /build:../../res/sound/newlonglazer.ogg;res/sound/newlonglazer.ogg
 
 #begin ../../res/sound/newmachinegun.ogg
 /importer:OggImporter
-/processor:SongProcessor
+/processor:SoundEffectProcessor
 /processorParam:Quality=Best
 /build:../../res/sound/newmachinegun.ogg;res/sound/newmachinegun.ogg
 
 #begin ../../res/sound/newnormalshot.ogg
 /importer:OggImporter
-/processor:SongProcessor
+/processor:SoundEffectProcessor
 /processorParam:Quality=Best
 /build:../../res/sound/newnormalshot.ogg;res/sound/newnormalshot.ogg
 
 #begin ../../res/sound/oobwarning.ogg
 /importer:OggImporter
-/processor:SongProcessor
+/processor:SoundEffectProcessor
 /processorParam:Quality=Best
 /build:../../res/sound/oobwarning.ogg;res/sound/oobwarning.ogg
 
 #begin ../../res/sound/runnerhit.ogg
 /importer:OggImporter
-/processor:SongProcessor
+/processor:SoundEffectProcessor
 /processorParam:Quality=Best
 /build:../../res/sound/runnerhit.ogg;res/sound/runnerhit.ogg
 
 #begin ../../res/sound/select.ogg
 /importer:OggImporter
-/processor:SongProcessor
+/processor:SoundEffectProcessor
 /processorParam:Quality=Best
 /build:../../res/sound/select.ogg;res/sound/select.ogg
 
 #begin ../../res/sound/shieldgone.ogg
 /importer:OggImporter
-/processor:SongProcessor
+/processor:SoundEffectProcessor
 /processorParam:Quality=Best
 /build:../../res/sound/shieldgone.ogg;res/sound/shieldgone.ogg
 
 #begin ../../res/sound/shieldup.ogg
 /importer:OggImporter
-/processor:SongProcessor
+/processor:SoundEffectProcessor
 /processorParam:Quality=Best
 /build:../../res/sound/shieldup.ogg;res/sound/shieldup.ogg
 
 #begin ../../res/sound/smolwhalekokill.ogg
 /importer:OggImporter
-/processor:SongProcessor
+/processor:SoundEffectProcessor
 /processorParam:Quality=Best
 /build:../../res/sound/smolwhalekokill.ogg;res/sound/smolwhalekokill.ogg
 
 #begin ../../res/sound/stageclear.ogg
 /importer:OggImporter
-/processor:SongProcessor
+/processor:SoundEffectProcessor
 /processorParam:Quality=Best
 /build:../../res/sound/stageclear.ogg;res/sound/stageclear.ogg
 
 #begin ../../res/sound/whale-chan kill.ogg
 /importer:OggImporter
-/processor:SongProcessor
+/processor:SoundEffectProcessor
 /processorParam:Quality=Best
 /build:../../res/sound/whale-chan kill.ogg;res/sound/whale-chan kill.ogg
 
 #begin ../../res/sound/whalery/game over.ogg
 /importer:OggImporter
-/processor:SongProcessor
+/processor:SoundEffectProcessor
 /processorParam:Quality=Best
 /build:../../res/sound/whalery/game over.ogg;res/sound/whalery/game over.ogg
 
 #begin ../../res/sound/whalery/thewhalesaysno/aybabtu.ogg
 /importer:OggImporter
-/processor:SongProcessor
+/processor:SoundEffectProcessor
 /processorParam:Quality=Best
 /build:../../res/sound/whalery/thewhalesaysno/aybabtu.ogg;res/sound/whalery/thewhalesaysno/aybabtu.ogg
 
 #begin ../../res/sound/whalery/thewhalesaysno/blazstar.ogg
 /importer:OggImporter
-/processor:SongProcessor
+/processor:SoundEffectProcessor
 /processorParam:Quality=Best
 /build:../../res/sound/whalery/thewhalesaysno/blazstar.ogg;res/sound/whalery/thewhalesaysno/blazstar.ogg
 
 #begin ../../res/sound/whalery/thewhalesaysno/cvs2.ogg
 /importer:OggImporter
-/processor:SongProcessor
+/processor:SoundEffectProcessor
 /processorParam:Quality=Best
 /build:../../res/sound/whalery/thewhalesaysno/cvs2.ogg;res/sound/whalery/thewhalesaysno/cvs2.ogg
 
 #begin ../../res/sound/whalery/thewhalesaysno/cya.ogg
 /importer:OggImporter
-/processor:SongProcessor
+/processor:SoundEffectProcessor
 /processorParam:Quality=Best
 /build:../../res/sound/whalery/thewhalesaysno/cya.ogg;res/sound/whalery/thewhalesaysno/cya.ogg
 
 #begin ../../res/sound/whalery/thewhalesaysno/dracula.ogg
 /importer:OggImporter
-/processor:SongProcessor
+/processor:SoundEffectProcessor
 /processorParam:Quality=Best
 /build:../../res/sound/whalery/thewhalesaysno/dracula.ogg;res/sound/whalery/thewhalesaysno/dracula.ogg
 
 #begin ../../res/sound/whalery/thewhalesaysno/familyman.ogg
 /importer:OggImporter
-/processor:SongProcessor
+/processor:SoundEffectProcessor
 /processorParam:Quality=Best
 /build:../../res/sound/whalery/thewhalesaysno/familyman.ogg;res/sound/whalery/thewhalesaysno/familyman.ogg
 
 #begin ../../res/sound/whalery/thewhalesaysno/hamburger.ogg
 /importer:OggImporter
-/processor:SongProcessor
+/processor:SoundEffectProcessor
 /processorParam:Quality=Best
 /build:../../res/sound/whalery/thewhalesaysno/hamburger.ogg;res/sound/whalery/thewhalesaysno/hamburger.ogg
 
 #begin ../../res/sound/whalery/thewhalesaysno/iwin.ogg
 /importer:OggImporter
-/processor:SongProcessor
+/processor:SoundEffectProcessor
 /processorParam:Quality=Best
 /build:../../res/sound/whalery/thewhalesaysno/iwin.ogg;res/sound/whalery/thewhalesaysno/iwin.ogg
 
 #begin ../../res/sound/whalery/thewhalesaysno/laugh.ogg
 /importer:OggImporter
-/processor:SongProcessor
+/processor:SoundEffectProcessor
 /processorParam:Quality=Best
 /build:../../res/sound/whalery/thewhalesaysno/laugh.ogg;res/sound/whalery/thewhalesaysno/laugh.ogg
 
 #begin ../../res/sound/whalery/thewhalesaysno/ohmycar.ogg
 /importer:OggImporter
-/processor:SongProcessor
+/processor:SoundEffectProcessor
 /processorParam:Quality=Best
 /build:../../res/sound/whalery/thewhalesaysno/ohmycar.ogg;res/sound/whalery/thewhalesaysno/ohmycar.ogg
 
 #begin ../../res/sound/whalery/thewhalesaysno/predictaboo.ogg
 /importer:OggImporter
-/processor:SongProcessor
+/processor:SoundEffectProcessor
 /processorParam:Quality=Best
 /build:../../res/sound/whalery/thewhalesaysno/predictaboo.ogg;res/sound/whalery/thewhalesaysno/predictaboo.ogg
 
 #begin ../../res/sound/whalery/thewhalesaysno/puzzlegame.ogg
 /importer:OggImporter
-/processor:SongProcessor
+/processor:SoundEffectProcessor
 /processorParam:Quality=Best
 /build:../../res/sound/whalery/thewhalesaysno/puzzlegame.ogg;res/sound/whalery/thewhalesaysno/puzzlegame.ogg
 
 #begin ../../res/sound/whalery/thewhalesaysno/sagat.ogg
 /importer:OggImporter
-/processor:SongProcessor
+/processor:SoundEffectProcessor
 /processorParam:Quality=Best
 /build:../../res/sound/whalery/thewhalesaysno/sagat.ogg;res/sound/whalery/thewhalesaysno/sagat.ogg
 
 #begin ../../res/sound/whalery/thewhalesaysno/shoryuken.ogg
 /importer:OggImporter
-/processor:SongProcessor
+/processor:SoundEffectProcessor
 /processorParam:Quality=Best
 /build:../../res/sound/whalery/thewhalesaysno/shoryuken.ogg;res/sound/whalery/thewhalesaysno/shoryuken.ogg
 
 #begin ../../res/sound/whalery/thewhalesaysno/tryagain.ogg
 /importer:OggImporter
-/processor:SongProcessor
+/processor:SoundEffectProcessor
 /processorParam:Quality=Best
 /build:../../res/sound/whalery/thewhalesaysno/tryagain.ogg;res/sound/whalery/thewhalesaysno/tryagain.ogg
 
 #begin ../../res/sound/whalery/whale 1 rev2.ogg
 /importer:OggImporter
-/processor:SongProcessor
+/processor:SoundEffectProcessor
 /processorParam:Quality=Best
 /build:../../res/sound/whalery/whale 1 rev2.ogg;res/sound/whalery/whale 1 rev2.ogg
 
 #begin ../../res/sound/whalery/whale 3.ogg
 /importer:OggImporter
-/processor:SongProcessor
+/processor:SoundEffectProcessor
 /processorParam:Quality=Best
 /build:../../res/sound/whalery/whale 3.ogg;res/sound/whalery/whale 3.ogg
 
 #begin ../../res/sound/whalery/whale crumble 2.ogg
 /importer:OggImporter
-/processor:SongProcessor
+/processor:SoundEffectProcessor
 /processorParam:Quality=Best
 /build:../../res/sound/whalery/whale crumble 2.ogg;res/sound/whalery/whale crumble 2.ogg
 
 #begin ../../res/sound/whalery/whale destroy.ogg
 /importer:OggImporter
-/processor:SongProcessor
+/processor:SoundEffectProcessor
 /processorParam:Quality=Best
 /build:../../res/sound/whalery/whale destroy.ogg;res/sound/whalery/whale destroy.ogg
 
 #begin ../../res/sound/whalery/whale fear me 4.ogg
 /importer:OggImporter
-/processor:SongProcessor
+/processor:SoundEffectProcessor
 /processorParam:Quality=Best
 /build:../../res/sound/whalery/whale fear me 4.ogg;res/sound/whalery/whale fear me 4.ogg
 
 #begin ../../res/sound/whalery/whale go my children.ogg
 /importer:OggImporter
-/processor:SongProcessor
+/processor:SoundEffectProcessor
 /processorParam:Quality=Best
 /build:../../res/sound/whalery/whale go my children.ogg;res/sound/whalery/whale go my children.ogg
 
 #begin ../../res/sound/whalery/whale i can see you 2.ogg
 /importer:OggImporter
-/processor:SongProcessor
+/processor:SoundEffectProcessor
 /processorParam:Quality=Best
 /build:../../res/sound/whalery/whale i can see you 2.ogg;res/sound/whalery/whale i can see you 2.ogg
 
 #begin ../../res/sound/whalery/whale i will devour you 3.ogg
 /importer:OggImporter
-/processor:SongProcessor
+/processor:SoundEffectProcessor
 /processorParam:Quality=Best
 /build:../../res/sound/whalery/whale i will devour you 3.ogg;res/sound/whalery/whale i will devour you 3.ogg
 
 #begin ../../res/sound/whalery/whale laugh.ogg
 /importer:OggImporter
-/processor:SongProcessor
+/processor:SoundEffectProcessor
 /processorParam:Quality=Best
 /build:../../res/sound/whalery/whale laugh.ogg;res/sound/whalery/whale laugh.ogg
 
 #begin ../../res/sound/whalery/whale my eye.ogg
 /importer:OggImporter
-/processor:SongProcessor
+/processor:SoundEffectProcessor
 /processorParam:Quality=Best
 /build:../../res/sound/whalery/whale my eye.ogg;res/sound/whalery/whale my eye.ogg
 
 #begin ../../res/sound/whalery/whale nowhere to run.ogg
 /importer:OggImporter
-/processor:SongProcessor
+/processor:SoundEffectProcessor
 /processorParam:Quality=Best
 /build:../../res/sound/whalery/whale nowhere to run.ogg;res/sound/whalery/whale nowhere to run.ogg
 
 #begin ../../res/sound/whalery/whale ow my eye.ogg
 /importer:OggImporter
-/processor:SongProcessor
+/processor:SoundEffectProcessor
 /processorParam:Quality=Best
 /build:../../res/sound/whalery/whale ow my eye.ogg;res/sound/whalery/whale ow my eye.ogg
 
 #begin ../../res/sound/whalery/whale there is no escape 2.ogg
 /importer:OggImporter
-/processor:SongProcessor
+/processor:SoundEffectProcessor
 /processorParam:Quality=Best
 /build:../../res/sound/whalery/whale there is no escape 2.ogg;res/sound/whalery/whale there is no escape 2.ogg
 
 #begin ../../res/sound/whalery/whale urgh.ogg
 /importer:OggImporter
-/processor:SongProcessor
+/processor:SoundEffectProcessor
 /processorParam:Quality=Best
 /build:../../res/sound/whalery/whale urgh.ogg;res/sound/whalery/whale urgh.ogg
 
 #begin ../../res/sound/whalery/whale you cannot escape your fate.ogg
 /importer:OggImporter
-/processor:SongProcessor
+/processor:SoundEffectProcessor
 /processorParam:Quality=Best
 /build:../../res/sound/whalery/whale you cannot escape your fate.ogg;res/sound/whalery/whale you cannot escape your fate.ogg
 
 #begin ../../res/sound/whalery/wsdeath.ogg
 /importer:OggImporter
-/processor:SongProcessor
+/processor:SoundEffectProcessor
 /processorParam:Quality=Best
 /build:../../res/sound/whalery/wsdeath.ogg;res/sound/whalery/wsdeath.ogg
 
 #begin ../../res/sound/whoosh (weapon 5).ogg
 /importer:OggImporter
-/processor:SongProcessor
+/processor:SoundEffectProcessor
 /processorParam:Quality=Best
 /build:../../res/sound/whoosh (weapon 5).ogg;res/sound/whoosh (weapon 5).ogg
 

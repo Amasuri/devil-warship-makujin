@@ -22,33 +22,33 @@ namespace DevilMakujin.Code.Entity
 
             debugSet2 = new List<GenericEnemy>
             {
-                new GenericEnemy(Vector2.Zero + new Vector2(0, -100*10)),
-                new GenericEnemy(Vector2.Zero + new Vector2(-100*10, -100)),
-                new GenericEnemy(Vector2.Zero + new Vector2(0, 100*10)),
-                new GenericEnemy(Vector2.Zero + new Vector2(100*10, 100)),
+                new ShipGunner(Vector2.Zero + new Vector2(0, -100*10)),
+                new ShipGunner(Vector2.Zero + new Vector2(-100*10, -100)),
+                new ShipGunner(Vector2.Zero + new Vector2(0, 100*10)),
+                new ShipGunner(Vector2.Zero + new Vector2(100*10, 100)),
 
-                new GenericEnemy(Vector2.Zero + new Vector2(0, -100*15)),
-                new GenericEnemy(Vector2.Zero + new Vector2(-100*15, -100)),
-                new GenericEnemy(Vector2.Zero + new Vector2(0, 100*15)),
-                new GenericEnemy(Vector2.Zero + new Vector2(100*15, 100)),
+                new ShipGunner(Vector2.Zero + new Vector2(0, -100*15)),
+                new ShipGunner(Vector2.Zero + new Vector2(-100*15, -100)),
+                new ShipGunner(Vector2.Zero + new Vector2(0, 100*15)),
+                new ShipGunner(Vector2.Zero + new Vector2(100*15, 100)),
             };
 
             debugSet3 = new List<GenericEnemy>
             {
-                new GenericEnemy(Vector2.Zero + new Vector2(0, -100*10)),
-                new GenericEnemy(Vector2.Zero + new Vector2(-100*10, -100)),
-                new GenericEnemy(Vector2.Zero + new Vector2(0, 100*10)),
-                new GenericEnemy(Vector2.Zero + new Vector2(100*10, 100)),
+                new ShipGunner(Vector2.Zero + new Vector2(0, -100*10)),
+                new ShipGunner(Vector2.Zero + new Vector2(-100*10, -100)),
+                new ShipGunner(Vector2.Zero + new Vector2(0, 100*10)),
+                new ShipGunner(Vector2.Zero + new Vector2(100*10, 100)),
 
-                new GenericEnemy(Vector2.Zero + new Vector2(0, -100*15)),
-                new GenericEnemy(Vector2.Zero + new Vector2(-100*15, -100)),
-                new GenericEnemy(Vector2.Zero + new Vector2(0, 100*15)),
-                new GenericEnemy(Vector2.Zero + new Vector2(100*15, 100)),
+                new ShipGunner(Vector2.Zero + new Vector2(0, -100*15)),
+                new ShipGunner(Vector2.Zero + new Vector2(-100*15, -100)),
+                new ShipGunner(Vector2.Zero + new Vector2(0, 100*15)),
+                new ShipGunner(Vector2.Zero + new Vector2(100*15, 100)),
 
-                new GenericEnemy(Vector2.Zero + new Vector2(0, -100*20)),
-                new GenericEnemy(Vector2.Zero + new Vector2(-100*20, -100)),
-                new GenericEnemy(Vector2.Zero + new Vector2(0, 100*20)),
-                new GenericEnemy(Vector2.Zero + new Vector2(100*20, 100)),
+                new ShipGunner(Vector2.Zero + new Vector2(0, -100*20)),
+                new ShipGunner(Vector2.Zero + new Vector2(-100*20, -100)),
+                new ShipGunner(Vector2.Zero + new Vector2(0, 100*20)),
+                new ShipGunner(Vector2.Zero + new Vector2(100*20, 100)),
             };
 
             bossSet = new List<GenericEnemy> //Or boss entity for sweet functions? or foreach will cover that if we foreach(Boss... .where(... is Boss))?

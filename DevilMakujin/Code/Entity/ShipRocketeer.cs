@@ -29,7 +29,7 @@ namespace DevilMakujin.Code.Entity
             this.absPos = initPos;
             this.speed = Vector2.Zero;
             this.type = type;
-            this.img = pirateImg[DevimakuGame.Rand.Next(pirateImg.Count)];
+            this.img = enemyShipImg[2];
             this.faction = EntityFaction.Enemies;
             this.aiMode = AiMode.Seek;
 

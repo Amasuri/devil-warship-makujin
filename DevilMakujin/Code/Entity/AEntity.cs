@@ -24,7 +24,8 @@ namespace DevilMakujin.Code.Entity
     {
         static protected List<Texture2D> playerBulletImg;
         static protected List<Texture2D> otherBulletImg;
-        static protected List<Texture2D> pirateImg;
+        static protected List<Texture2D> enemyShipImg;
+        static protected List<Texture2D> asteroidImg;
         static protected List<Texture2D> leechImg;
         static protected List<Texture2D> otherLeechImg;
         protected Vector2 absPos;
@@ -101,21 +102,26 @@ namespace DevilMakujin.Code.Entity
         {
             playerBulletImg = new List<Texture2D>
             {
-                game.Content.Load<Texture2D>("entity/bullet_medium"),
-                game.Content.Load<Texture2D>("entity/bullet_small"),
-                game.Content.Load<Texture2D>("entity/bullet_long"),
+                game.Content.Load<Texture2D>("entity/bullet/bullet_medium"),
+                game.Content.Load<Texture2D>("entity/bullet/bullet_small"),
+                game.Content.Load<Texture2D>("entity/bullet/bullet_long"),
             };
 
             otherBulletImg = new List<Texture2D>
             {
-                game.Content.Load<Texture2D>("entity/bullet_minion"),
+                game.Content.Load<Texture2D>("entity/bullet/bullet_minion"),
             };
 
-            pirateImg = new List<Texture2D>
+            enemyShipImg = new List<Texture2D>
             {
-                game.Content.Load<Texture2D>("entity/pirate1"),
-                game.Content.Load<Texture2D>("entity/pirate2"),
-                game.Content.Load<Texture2D>("entity/pirate3"),
+                game.Content.Load<Texture2D>("entity/gunner"),
+                game.Content.Load<Texture2D>("entity/sniper"),
+                game.Content.Load<Texture2D>("entity/rocketeer"),
+            };
+
+            asteroidImg = new List<Texture2D>
+            {
+                game.Content.Load<Texture2D>("entity/asteroid1"),
             };
 
             leechImg = new List<Texture2D>

@@ -9,7 +9,7 @@ namespace DevilMakujin.Code.Entity
             this.absPos = initPos;
             this.speed = Vector2.Zero;
             this.type = EntityType.Projectile;
-            this.img = pirateImg[DevimakuGame.Rand.Next(pirateImg.Count)];
+            this.img = asteroidImg[0];
             this.faction = EntityFaction.Player;
         }
     }

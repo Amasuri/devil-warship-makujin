@@ -4,7 +4,7 @@ using System.Collections.Generic;
 
 namespace DevilMakujin.Code.Entity
 {
-    public class GenericEnemy : AEntity
+    abstract public class GenericEnemy : AEntity
     {
         protected int shootTime;
         protected const float maxSpeed = 20;
@@ -17,7 +17,7 @@ namespace DevilMakujin.Code.Entity
             this.startingPos = absPos;
             this.speed = Vector2.Zero;
             this.type = type;
-            this.img = pirateImg[DevimakuGame.Rand.Next(pirateImg.Count)];
+            this.img = null;
             this.faction = EntityFaction.Enemies;
 
             this.shootTime = 0;
