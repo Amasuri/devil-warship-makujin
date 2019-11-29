@@ -58,7 +58,15 @@ namespace DevilMakujin.Code.Entity
 
         public override void UpdatePos()
         {
-            ; //you do nothin you puny mortal
+            ; //you do nothin on pos you puny mortal, it's taken from the donor
+
+            //except we do shadow functionality because guys we're evil and screw all the code practices YEAH
+            //seriously though i am just working on jam's code don't judge me
+            //this isn't a huge game so it's not gonna get rewritten anyway
+
+            this.lifeTimeLeft -= DevimakuGame.DeltaUpdate;
+
+            //something about hitboxing being available only once per X secs
         }
     }
 }
