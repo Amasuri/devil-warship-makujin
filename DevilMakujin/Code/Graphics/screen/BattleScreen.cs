@@ -26,7 +26,7 @@ namespace DevilMakujin.Code.Graphics
         /// that should be used in this class only. Due to old jam architecture it's this way now, but
         /// it will change for better later
         /// </summary>
-        public readonly Vector2 playerDrawOffset;
+        static public Vector2 playerDrawOffset { get; private set; }
 
         /// <summary> Is here temporatily. Will be moved when/if map shrink logic will be implemented. </summary>
         private const int physMapShrink = 1;
@@ -497,6 +497,10 @@ namespace DevilMakujin.Code.Graphics
                         this.entityList.Add(new Bullet(playerDrawOffset + PlayerPhysics.PlayerAbsPos, shotDirection * PlayerEquipInfo.GetEquippedGunSpeed(), EntityFaction.Player, bulletType: gun));
                         this.entityList.Add(new Bullet(playerDrawOffset + PlayerPhysics.PlayerAbsPos, leftDirecton * PlayerEquipInfo.GetEquippedGunSpeed(), EntityFaction.Player, bulletType: gun));
                         this.entityList.Add(new Bullet(playerDrawOffset + PlayerPhysics.PlayerAbsPos, RightDirecton * PlayerEquipInfo.GetEquippedGunSpeed(), EntityFaction.Player, bulletType: gun));
+                        break;
+
+                    case Bullet.BulletType.LongBlaster:
+                        this.entityList.Add(new BulletLaser());
                         break;
 
                     default:

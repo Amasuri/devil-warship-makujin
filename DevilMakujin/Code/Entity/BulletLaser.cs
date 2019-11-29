@@ -23,7 +23,7 @@ namespace DevilMakujin.Code.Entity
             if (refToCaller != null)
                 this.absPos = refToCaller.GetPos();
             else
-                this.absPos = PlayerPhysics.PlayerAbsPos;
+                this.absPos = PlayerPhysics.PlayerAbsPos + BattleScreen.playerDrawOffset;
 
             this.speed = Vector2.Zero;
             this.lifeTimeLeft = LIFE_TIME_MAX;
@@ -40,7 +40,7 @@ namespace DevilMakujin.Code.Entity
             if (refToCaller != null)
                 this.absPos = refToCaller.GetPos();
             else
-                this.absPos = PlayerPhysics.PlayerAbsPos;
+                this.absPos = PlayerPhysics.PlayerAbsPos + BattleScreen.playerDrawOffset;
 
             return this.absPos;
         }
@@ -58,7 +58,11 @@ namespace DevilMakujin.Code.Entity
 
         public override void UpdatePos()
         {
-            ; //you do nothin on pos you puny mortal, it's taken from the donor
+            //you do nothin on pos you puny mortal, it's taken from the donor
+            if (refToCaller != null)
+                this.absPos = refToCaller.GetPos();
+            else
+                this.absPos = PlayerPhysics.PlayerAbsPos + BattleScreen.playerDrawOffset;
 
             //except we do shadow functionality because guys we're evil and screw all the code practices YEAH
             //seriously though i am just working on jam's code don't judge me

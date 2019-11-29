@@ -24,14 +24,14 @@ namespace DevilMakujin.Code
         {
             battle.AddEnemies(EnemySet.debugSet1);
             CurrentStage = (Stage)Settings.Default.StartingStage; // Stage.OuterRing;  //Stage.Center; // DEBUG Stage.OuterRing;
-            PlayerPhysics.InitPosOnStage(StageManager.CurrentStage, battle.playerDrawOffset);
+            PlayerPhysics.InitPosOnStage(StageManager.CurrentStage, BattleScreen.playerDrawOffset);
         }
 
         static public void NextStage(BattleScreen battle)
         {
             CurrentStage++;
             PlayerEquipInfo.HealBetweenStages();
-            PlayerPhysics.InitPosOnStage(StageManager.CurrentStage, battle.playerDrawOffset);
+            PlayerPhysics.InitPosOnStage(StageManager.CurrentStage, BattleScreen.playerDrawOffset);
 
             battle.ClearEntityList();
             AddEnemiesOnCurrentStage(battle);
@@ -46,9 +46,11 @@ namespace DevilMakujin.Code
                     case Stage.MediumRing:
                         battle.AddEnemies(EnemySet.debugSet2);
                         break;
+
                     case Stage.InnerRing:
                         battle.AddEnemies(EnemySet.debugSet3);
                         break;
+
                     case Stage.OuterRing:
                         battle.AddEnemies(EnemySet.debugSet1);
                         break;
