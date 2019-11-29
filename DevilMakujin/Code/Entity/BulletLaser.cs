@@ -14,9 +14,17 @@ namespace DevilMakujin.Code.Entity
 
         public bool ReadyToDie => lifeTimeLeft <= 0f;
 
-        public BulletLaser()
+        /// <summary>
+        /// The first argument is needed, because laser exists tied to the entity. If no entity specified, speed/angle is taken from player
+        /// (who is not an entity... what was I thinking during the jam?????)
+        /// </summary>
+        public BulletLaser(AEntity refToCaller = null)
         {
-            this.absPos = refToCaller.GetPos();
+            if (refToCaller != null)
+                this.absPos = refToCaller.GetPos();
+            else
+                this.absPos = PlayerPhysics.PlayerAbsPos;
+
             this.speed = Vector2.Zero;
             this.lifeTimeLeft = LIFE_TIME_MAX;
 
@@ -29,7 +37,12 @@ namespace DevilMakujin.Code.Entity
         /// </summary>
         public override Vector2 GetPos()
         {
-            return refToCaller.GetPos();
+            if (refToCaller != null)
+                this.absPos = refToCaller.GetPos();
+            else
+                this.absPos = PlayerPhysics.PlayerAbsPos;
+
+            return this.absPos;
         }
 
         /// <summary>
@@ -37,7 +50,10 @@ namespace DevilMakujin.Code.Entity
         /// </summary>
         public override void ChangeSpeedVector(Vector2 plPos, Vector2 mapSize)
         {
-            this.speed = refToCaller.GetSpeed();
+            if (refToCaller != null)
+                this.speed = refToCaller.GetSpeed();
+            else
+                this.speed = PlayerPhysics.PlayerPosDiff;
         }
 
         public override void UpdatePos()
