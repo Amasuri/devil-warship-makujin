@@ -15,7 +15,7 @@ namespace DevilMakujin.Code.Entity
             debugSet1 = new List<GenericEnemy>
             {
                 new ShipRocketeer(Vector2.Zero + new Vector2(0, -100*10)),
-                new ShipRocketeer(Vector2.Zero + new Vector2(-100*10, -100)),
+                new ShipSniper(Vector2.Zero + new Vector2(-100*10, -100)),
                 new ShipGunner(Vector2.Zero + new Vector2(0, 100*10)),
                 new ShipGunner(Vector2.Zero + new Vector2(100*10, 100)),
             };
